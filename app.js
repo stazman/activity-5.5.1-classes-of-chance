@@ -4,7 +4,7 @@ class Casino {
         this.name = name;
         this.timesPlayed = 0;
         this.winnings = 0;
-        this.isFakeCoin = false;
+        this.isFakeCoin = isFakeCoin;
     }
 
     playGame(betAmount){
@@ -21,12 +21,12 @@ class Casino {
 };
 
 // TESTS
-const myCasino = new Casino("HackerU Casino", true);
+const myCasino = new Casino("HackerU Casino", false);
 console.log(myCasino);
-myCasino.playGame(5, true);
-// myCasino.playGame(15);
-// myCasino.playGame(25);
-// myCasino.playGame(35);
+myCasino.playGame(5);
+myCasino.playGame(15);
+myCasino.playGame(25);
+myCasino.playGame(35);
 
 // BONUS TESTS
 /*
